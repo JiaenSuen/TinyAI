@@ -1,6 +1,7 @@
 ## **IMDB Sentiment Classification with PyTorch**
 
-A small GitHub project demonstrating a complete pipeline for binary sentiment classification on the IMDB dataset using PyTorch. This repository covers:
+This a small GitHub project demonstrating a complete pipeline for binary sentiment classification  <br>
+on the IMDB dataset using PyTorch. This repository covers , 
 
 * Data ingestion with pandas
 * Custom tokenizer and vocabulary building
