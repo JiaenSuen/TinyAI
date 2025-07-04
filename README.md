@@ -1,35 +1,37 @@
 # TinyAI
-A series of Small Deep Learning Projects with Pytorch 
-  
-  <br> 
-  <br> 
-  ![image](arctic-fox.jpg)
+
+A series of Small Deep Learning Projects with Pytorch
+
+<br> 
+<br>
+
+
+  ![Image](arctic-fox.jpg)
+
 
 ## Simple NLP Projects
+
 In this section , storage some of little projects combine NLP and Neural Networks.
 
 * Text Classifier : IMDB Appraise Classifier
 * 
 
 <br> 
-<br>  
+<br>
 
 ## Simple DQN Projects
 
+<br> 
+<br>
+
+## Recommendation System
 
 <br> 
 <br>
 
-##  Recommendation System
-
-
-<br> 
-<br>
-
-##  Analysis System
-
+## Analysis System
 
 <br> 
 <br>
 
-##  ML Projects
+## ML Projects
