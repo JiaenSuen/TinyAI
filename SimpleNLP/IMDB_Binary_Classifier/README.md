@@ -2,7 +2,7 @@
 
  
 This a small NLP project which I first made in 2023, <br>
-Recently, I re-implemented and reorganized it  <br>
+Recently(2025/6), I re-implemented and reorganized it  <br>
 There demonstrating a complete pipeline for binary sentiment classification  <br>
 on the IMDB dataset using PyTorch. This repository covers , 
 
