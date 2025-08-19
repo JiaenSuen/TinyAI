@@ -25,11 +25,16 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br>
 
 ## Recommendation System
+Some of Recommendation System coding projects with Machine Learning Model or PyTorch Deep Learning.
+
+* Cities Recommendation By Location 
 
 <br> 
 <br>
 
 ## Time Series
+
+* Amazon Time Series Stock Price Prediction
 
 <br> 
 <br>
