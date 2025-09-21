@@ -14,7 +14,7 @@ A series of Small Deep Learning Projects with Pytorch
 In this section , storage some of little projects combine NLP and Neural Networks.
 
 * Text Classifier : IMDB Appraise Classifier
-* 
+* AG News Classification : Embedding + LSTM
 
 <br> 
 <br>
