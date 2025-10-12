@@ -1,6 +1,6 @@
 # TinyAI
 
-A series of Small Deep Learning Projects with Pytorch
+A series of Small Deep Learning Side Projects
 
 <br> 
 <br>
@@ -19,7 +19,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br> 
 <br>
 
-## Simple DQN Projects
+## Simple DRL Projects
 
 <br> 
 <br>
@@ -40,3 +40,13 @@ Some of Recommendation System coding projects with Machine Learning Model or PyT
 <br>
 
 ## ML Projects
+
+<br> 
+<br>
+
+## Langchain
+
+* Pizza Reviws ReadingBot with Langchain Context Engineering
+
+<br> 
+<br>
