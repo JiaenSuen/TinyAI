@@ -47,6 +47,7 @@ Some of Recommendation System coding projects with Machine Learning Model or PyT
 ## Langchain
 
 * Pizza Reviws ReadingBot with Langchain Context Engineering
+* Ollama_Context_Engineering_Using_PDFs : Red Fox Introduction
 
 <br> 
 <br>
