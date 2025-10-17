@@ -42,3 +42,21 @@ Predicts the category of a single news article. It’s useful for applying the t
 
 ## Model Introduction
 The TextClassifier model is a simple deep learning architecture designed for AG News classification, balancing ease of understanding and performance for beginners. It uses an Embedding layer to convert words into 100-dimensional GloVe vectors, which capture word meanings efficiently. An LSTM layer processes the sequence of word vectors to understand context and relationships in the text, chosen for its ability to handle sequential data like sentences. Finally, a Linear layer maps the LSTM’s output to four classes (World, Sports, Business, Sci/Tech). This design is straightforward yet effective, leveraging pre-trained embeddings to reduce training time and an LSTM to capture text patterns, making it suitable for text classification tasks.
+
+
+
+### Data View
+Title	| Description |
+--- | ---|
+Fears for T N pension after talks|Unions representing workers at Turner Newall...
+The Race is On: Second Private Team Sets Launc...|	SPACE.com - TORONTO, Canada -- A second\team o...
+Ky. Company Wins Grant to Study Peptides (AP)	|AP - A company founded by a chemistry research...
+Prediction Unit Helps Forecast Wildfires (AP) |AP - It's barely dawn when Mike Fitzpatrick st...
+
+
+Class mapping: {1: 'World', 2: 'Sports', 3: 'Business', 4: 'Sci/Tech'}
+
+### Test Data Performence
+
+Test Accuracy: 92.62%  
+
