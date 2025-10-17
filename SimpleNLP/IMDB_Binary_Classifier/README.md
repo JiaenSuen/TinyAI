@@ -1,10 +1,9 @@
 ## **IMDB Sentiment Classification with PyTorch**
 
- 
-This a small NLP project which I first made in 2023, <br>
-Recently(2025/6), I re-implemented and reorganized it  <br>
-There demonstrating a complete pipeline for binary sentiment classification  <br>
-on the IMDB dataset using PyTorch. This repository covers , 
+This a small NLP project which I first made in 2022 or 2023,  
+Recently(2025/6), I re-implemented and reorganized it  
+There demonstrating a complete pipeline for binary sentiment   classification  
+on the IMDB dataset using PyTorch. This repository covers ,
 
 * Data ingestion with pandas
 * Custom tokenizer and vocabulary building
@@ -49,7 +48,6 @@ on the IMDB dataset using PyTorch. This repository covers ,
 Together, this pipeline transforms raw text reviews into fixed‑length numeric sequences, ready to be fed into an embedding layer and neural network for sentiment classification.
 
 ## Model
-
 
 **Model Architecture**
 
@@ -100,3 +98,49 @@ Together, this pipeline transforms raw text reviews into fixed‑length numeric 
    * Select the class with the highest probability as the predicted sentiment, and report its probability as a confidence score.
 
 ---
+
+| review                                               | sentiment |
+| ---------------------------------------------------- | --------- |
+| One of the other reviewers has mentioned that ...    | 1         |
+| A wonderful little production.`<br /><br />`The... | 1         |
+| I thought this was a wonderful way to spend ti...    | 1         |
+| Basically there's a family where a little boy ...    | 0         |
+| Petter Mattei's "Love in the Time of Money" is...    | 1         |
+
+---
+
+Text → tokenizer → vocab lookup → embedding → LSTM → hidden layer → linear → softmax → Classify
+
+---
+
+### Training Record
+
+Epoch  1: Loss = 0.6836, Accuracy = 0.5552   
+Epoch  2: Loss = 0.6160, Accuracy = 0.6545   
+Epoch  3: Loss = 0.4205, Accuracy = 0.8128  
+Epoch  4: Loss = 0.3320, Accuracy = 0.8597  
+Epoch  5: Loss = 0.2728, Accuracy = 0.8891  
+Epoch  6: Loss = 0.2168, Accuracy = 0.9156  
+Epoch  7: Loss = 0.1623, Accuracy = 0.9395  
+Epoch  8: Loss = 0.1145, Accuracy = 0.9601  
+Epoch  9: Loss = 0.0770, Accuracy = 0.9744  
+Epoch 10: Loss = 0.0619, Accuracy = 0.9791  
+Epoch 11: Loss = 0.0442, Accuracy = 0.9864  
+Epoch 12: Loss = 0.0307, Accuracy = 0.9918  
+Epoch 13: Loss = 0.0287, Accuracy = 0.9918  
+Epoch 14: Loss = 0.0235, Accuracy = 0.9938  
+Epoch 15: Loss = 0.0223, Accuracy = 0.9941  
+Epoch 16: Loss = 0.0164, Accuracy = 0.9958  
+Epoch 17: Loss = 0.0161, Accuracy = 0.9956  
+Epoch 18: Loss = 0.0147, Accuracy = 0.9962  
+Epoch 19: Loss = 0.0214, Accuracy = 0.9940   
+
+
+### Test Dataset Performence
+
+Test Accuracy = 0.9606
+
+### Case Demo
+
+input : "This movie is fantastic! I really loved it."  
+Preduct Result: positive, Prob: 0.9971
