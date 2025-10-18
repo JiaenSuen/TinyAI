@@ -1,3 +1,3 @@
 # Simple Maze Reinforcement Learning
 
-![Q-learning Maze](./Record/QL_demo.gif)
+![Q-learning Maze](./Record/QL_Demo.gif)
