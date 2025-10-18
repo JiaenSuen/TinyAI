@@ -19,8 +19,9 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br> 
 <br>
 
-## Simple DRL Projects
+## Simple RL Projects
 
+* Q-Learning : Simple Maze Solve
 <br> 
 <br>
 
