@@ -13,3 +13,13 @@ This design makes the code very clean and only requires us to consider how to de
 So when design Enviorment , I just need to think the logic and rule about game. Take a input, and code run what happen inside the enviorment. After complete enviorment, can just use a simple interface and easy to connect with human user game or RL agent.
 
 ### Q Learning : Tabular
+#### Parameters
+* learning rate = 0.1   
+* discount factor = 0.95  
+* epsilon-greedy  = 0.3  
+* iteration times = 5000 
+* max step for each eppch = 400
+
+#### Q-table
+Q Table is a Dictionary Struct which record every actions' Action Value for states of whole maze map.
+Calculate them with transfer function formula.
