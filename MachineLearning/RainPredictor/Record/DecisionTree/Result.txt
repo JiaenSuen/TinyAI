@@ -1,0 +1,11 @@
+Decision tree model test set accuracy : 0.77
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.95      0.77      0.85     79694
+           1       0.40      0.81      0.53     15433
+
+    accuracy                           0.77     95127
+   macro avg       0.68      0.79      0.69     95127
+weighted avg       0.86      0.77      0.80     95127

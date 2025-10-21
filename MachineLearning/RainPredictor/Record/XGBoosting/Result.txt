@@ -1,0 +1,11 @@
+XGBoost Model test set accuracy : 0.88
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.94      0.91      0.92     79694
+           1       0.60      0.71      0.65     15433
+
+    accuracy                           0.88     95127
+   macro avg       0.77      0.81      0.79     95127
+weighted avg       0.89      0.88      0.88     95127
