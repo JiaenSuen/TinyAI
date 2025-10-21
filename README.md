@@ -42,6 +42,8 @@ Some of Recommendation System coding projects with Machine Learning Model or PyT
 
 ## ML Projects
 
+* Rain Predictor : Machine Learing Midterm Report ,2024  
+
 <br> 
 <br>
 
