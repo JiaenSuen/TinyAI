@@ -25,7 +25,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br> 
 <br>
 
-## Recommendation System
+## Recommender System
 From Zero To Advance
 
 * Cities Recommendation By Location 
@@ -44,6 +44,7 @@ From Zero To Advance
 ## ML Projects
 
 * Rain Predictor : Machine Learing Midterm Report ,2024  
+* Spam Classifier using Naive Bayes
 
 <br> 
 <br>
