@@ -26,9 +26,10 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br>
 
 ## Recommendation System
-Some of Recommendation System coding projects with Machine Learning Model or PyTorch Deep Learning.
+From Zero To Advance
 
 * Cities Recommendation By Location 
+* Content Based Movie Recommender System : TFIDF
 
 <br> 
 <br>
