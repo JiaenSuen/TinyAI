@@ -41,6 +41,10 @@ From Zero To Advance
 <br> 
 <br>
 
+## Graphs Projects
+* CoRA : Scientific Publications Classification
+
+
 ## ML Projects
 
 * Rain Predictor : Machine Learing Midterm Report ,2024  
