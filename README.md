@@ -60,6 +60,6 @@ From Zero To Advance
 
 
 ## Simple ChatBots
-* ChatBot-s-ex-001 : NLP+ANN
+* ChatBot-small-ex-001 : NLP+ANN
 <br> 
 <br>
