@@ -1,0 +1,97 @@
+NER Evaluation Scores:
+Precision: 1.0000
+Recall: 1.0000
+F-Score: 1.0000
+
+Text: I'd like 2 Big Mac.
+Entities: [('2', 'QUANTITY'), ('Big Mac', 'PRODUCT')]
+Formatted Order:
+2x Big Mac
+Total: $11.98
+
+Text: Can I get 1 McChicken and 3 World Famous Fries Medium?
+Entities: [('1', 'QUANTITY'), ('McChicken', 'PRODUCT'), ('3', 'QUANTITY'), ('World Famous Fries Medium', 'PRODUCT')]
+Formatted Order:
+1x McChicken
+3x World Famous Fries Medium
+Total: $14.36
+
+Text: Hello, I want a Cheeseburger, please.
+Entities: [('Cheeseburger', 'PRODUCT')]
+Formatted Order:
+1x Cheeseburger
+Total: $2.49
+
+Text: Give me 4 10 Piece Chicken McNuggets.
+Entities: [('4', 'QUANTITY'), ('10 Piece Chicken McNuggets', 'PRODUCT')]
+Formatted Order:
+4x 10 Piece Chicken McNuggets
+Total: $25.96
+
+Text: One Big Mac and 2 Soft Drink Large.
+Entities: [('Big Mac', 'PRODUCT'), ('2', 'QUANTITY'), ('Soft Drink Large', 'PRODUCT')]
+Formatted Order:
+1x Big Mac
+2x Soft Drink Large
+Total: $11.97
+
+Text: I'll have 3 Filet-O-Fish.
+Entities: [('3', 'QUANTITY'), ('Filet-O-Fish', 'PRODUCT')]
+Formatted Order:
+3x Filet-O-Fish
+Total: $15.87
+
+Text: Order: 5 Apple Pie.
+Entities: [('5', 'QUANTITY'), ('Apple Pie', 'PRODUCT')]
+Formatted Order:
+5x Apple Pie
+Total: $8.95
+
+Text: Hi, 2 Double Cheeseburger.
+Entities: [('2', 'QUANTITY'), ('Double Cheeseburger', 'PRODUCT')]
+Formatted Order:
+2x Double Cheeseburger
+Total: $7.58
+
+Text: I need 1 Happy Meal Hamburger.
+Entities: [('1', 'QUANTITY'), ('Happy Meal Hamburger', 'PRODUCT')]
+Formatted Order:
+1x Happy Meal Hamburger
+Total: $4.99
+
+Text: Just 3 McCrispy.
+Entities: [('3', 'QUANTITY'), ('McCrispy', 'PRODUCT')]
+Formatted Order:
+3x McCrispy
+Total: $16.47
+
+Text: Hey, can you add 2 Quarter Pounder with Cheese.
+Entities: [('2', 'QUANTITY'), ('Quarter Pounder with Cheese', 'PRODUCT')]
+Formatted Order:
+2x Quarter Pounder with Cheese
+Total: $12.58
+
+Text: I’d love two Big Mac.
+Entities: [('Big Mac', 'PRODUCT')]
+Formatted Order:
+1x Big Mac
+Total: $5.99
+
+Text: Please prepare 4 Vanilla Shake Small.
+Entities: [('4', 'QUANTITY'), ('Vanilla Shake Small', 'PRODUCT')]
+Formatted Order:
+4x Vanilla Shake Small
+Total: $13.16
+
+Text: Quick order: a McFlurry with OREO.
+Entities: [('McFlurry with OREO', 'PRODUCT')]
+Formatted Order:
+1x McFlurry with OREO
+Total: $4.49
+
+Text: For lunch, 1 Cookie.
+Entities: [('1', 'QUANTITY'), ('Cookie', 'PRODUCT')]
+Formatted Order:
+1x Cookie
+Total: $1.29
+
