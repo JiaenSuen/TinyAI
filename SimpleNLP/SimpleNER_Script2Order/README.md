@@ -2,7 +2,8 @@
 
 
 ## Tools :
-SpaCy
+SpaCy - transition-based sequence learning  
+Tok2Vec : Hash embeddings , CNN , contextual token features
 
 ## Test Results : 
 
