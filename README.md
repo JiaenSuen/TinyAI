@@ -16,6 +16,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 * Text Classifier : IMDB Appraise Classifier
 * AG News Classification : Embedding + LSTM
 * Simple NER : Text Script Convert To Order List
+* NLP Libary for Deep Learning : Pytorch
 
 <br> 
 <br>
