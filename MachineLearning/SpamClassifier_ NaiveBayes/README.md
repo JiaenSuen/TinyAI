@@ -10,7 +10,24 @@ text | spam
 4  Subject: do not have money , get software cds ...|     1
 
 
-### Performence
+## Compare NLP Preprocessing Methods (Naive Bayes)
 
-Train Accuarcy : 0.9120  
-Test  Accuarcy : 0.8560
+### Bag of Words
+-- Vocabulary size: 7945  
+**Train Accuracy : 0.8970**   
+**Test Accuracy  : 0.8508**
+
+---
+
+
+### Stemming + Stop Word + TF-IDF
+-- Vocabulary size: 6060  
+**Train Accuracy : 0.9956**   
+**Test Accuracy  : 0.9372**
+
+---
+
+### Bag of Words + Stop Word + **Bigram**
+-- Vocabulary size: 85535  
+**Train Accuracy : 0.9967**   
+**Test Accuracy  : 0.9546**

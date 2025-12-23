@@ -34,17 +34,4 @@ class NaiveBayes:
         probs = -0.5 * np.sum(((x - mean) ** 2) / (sigma + self.eps), axis=1)
         return const + probs
 
-if __name__ == "__main__":
-    X = np.load("data/X.npy")
-    y = np.load("data/y.npy")
-
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    NB = NaiveBayes()
-    NB.fit(X_train, y_train)
-    y_fit  = NB.predict(X_train)
-    y_pred = NB.predict(X_test)
-
-    fit_accuracy = np.mean(y_fit == y_train)
-    accuracy = np.mean(y_pred == y_test)
-    print(f"Train Accuarcy : {fit_accuracy :.4f}")
-    print(f"Test  Accuarcy : {accuracy:.4f}")
+ 
