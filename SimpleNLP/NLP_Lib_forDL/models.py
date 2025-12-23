@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# ---------- LSTM ----------
+# LSTM 
 class LSTMModel(nn.Module):
     def __init__(self, vocab_size, embed_dim, hidden_dim, num_classes):
         super().__init__()
@@ -16,7 +16,7 @@ class LSTMModel(nn.Module):
         return self.fc(h[-1])
 
 
-# ---------- GRU ----------
+# GRU 
 class GRUModel(nn.Module):
     def __init__(self, vocab_size, embed_dim, hidden_dim, num_classes):
         super().__init__()
@@ -30,7 +30,7 @@ class GRUModel(nn.Module):
         return self.fc(h[-1])
 
 
-# ---------- CNN Text ----------
+# CNN Text 
 class CNNTextModel(nn.Module):
     def __init__(self, vocab_size, embed_dim, hidden_dim, num_classes):
         super().__init__()
@@ -43,7 +43,7 @@ class CNNTextModel(nn.Module):
         emb = emb.unsqueeze(1)             # [B, 1, T, E]
         conv = F.relu(self.conv(emb))      # [B, H, T-2, 1]
         pooled = F.max_pool2d(conv, (conv.size(2), 1))
-        pooled = pooled.squeeze(3)         # 只去掉 width=1
-        pooled = pooled.squeeze(2)         # 只去掉 length=T-2
-        return self.fc(pooled)             # [B, num_classes] 保留 batch
+        pooled = pooled.squeeze(3)         
+        pooled = pooled.squeeze(2)         
+        return self.fc(pooled)            
 
