@@ -9,6 +9,15 @@ A series of Small Deep Learning Side Projects
   ![Image](arctic-fox.jpg)
 
 
+
+## Data Science & Machine Learning Projects
+  
+* Rain Predictor : Machine Learing Midterm Report ,2024  
+* Spam Classifier using Naive Bayes
+
+<br> 
+<br>
+
 ## Simple NLP Projects
 
 In this section , storage some of little projects combine NLP and Neural Networks.
@@ -27,7 +36,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br> 
 <br>
 
-## Recommender System
+## Simple Recommender System
 From Zero To Advance
 
 * Cities Recommendation By Location 
@@ -36,32 +45,29 @@ From Zero To Advance
 <br> 
 <br>
 
-## Time Series
+## Simple Time Series
 
 * Amazon Time Series Stock Price Prediction
 
 <br> 
 <br>
 
-## Graphs Projects
+## Simple Graphs Projects
 * CoRA : Scientific Publications Classification
-
-
-## ML Projects
-
-* Rain Predictor : Machine Learing Midterm Report ,2024  
-* Spam Classifier using Naive Bayes
 
 <br> 
 <br>
+
 
 ## Langchain
 
 * Pizza Reviws ReadingBot with Langchain CSV Context Engineering
 * Ollama Context Engineering Using PDFs : Red Fox Introduction
 
+<br> 
+<br>
 
-## Simple ChatBots
+## Develope ChatBots
 * ChatBot-small-ex-001 : NLP+ANN
 <br> 
 <br>
