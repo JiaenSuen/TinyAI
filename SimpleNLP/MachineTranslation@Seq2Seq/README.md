@@ -1,5 +1,7 @@
-
-
+# Machine Translation (English to German) , Sequence-to-Sequence
+## Multi 30k Machine Translation Dataset
+English to German
+https://www.kaggle.com/datasets/hemanthkumar21/multi30k-de-en
 
 ## Seq2Seq
 ```
