@@ -17,7 +17,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 * AG News Classification : Embedding + LSTM
 * Simple NER : Text Script Convert To Order List
 * NLP Libary for Deep Learning : Pytorch
-
+* MachineTranslation : LSTM - Sequence to Sequence
 <br> 
 <br>
 
