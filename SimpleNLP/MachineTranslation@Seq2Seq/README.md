@@ -9,8 +9,6 @@ This is a little project experimenting with classic Seq2Seq models in PyTorch. T
  
 
 ## Machine Translation
-Machine translation (MT) has come a long way, but the real revolution in neural approaches kicked off around 2014 with the rise of Seq2Seq models.
-
 The shift to neural machine translation (NMT) began with Seq2Seq architectures in 2014–2015. Pioneered by papers like Sutskever et al. (2014) and Cho et al. (2014), these used an RNN/LSTM encoder to compress the source sentence into a fixed-length vector, then a decoder to generate the target sentence step-by-step.
 
 Vanilla Seq2Seq worked okay for short sentences but struggled with long ones due to the bottleneck of squeezing everything into one vector.
