@@ -1,0 +1,118 @@
+Train samples: 29000
+Test samples : 1000
+
+First 50 Epoch : 
+
+[LSTM_Encoder_en2de] Epoch 1, Loss=5056.6489
+[LSTM_Encoder_en2de] Epoch 2, Loss=4492.2774
+[LSTM_Encoder_en2de] Epoch 3, Loss=4281.0462
+[LSTM_Encoder_en2de] Epoch 4, Loss=4105.0792
+[LSTM_Encoder_en2de] Epoch 5, Loss=3943.5370
+[LSTM_Encoder_en2de] Epoch 6, Loss=3816.7285
+[LSTM_Encoder_en2de] Epoch 7, Loss=3696.6720
+[LSTM_Encoder_en2de] Epoch 8, Loss=3592.7587
+[LSTM_Encoder_en2de] Epoch 9, Loss=3487.9081
+[LSTM_Encoder_en2de] Epoch 10, Loss=3401.4851
+[LSTM_Encoder_en2de] Epoch 11, Loss=3318.8399
+[LSTM_Encoder_en2de] Epoch 12, Loss=3239.1884
+[LSTM_Encoder_en2de] Epoch 13, Loss=3167.6722
+[LSTM_Encoder_en2de] Epoch 14, Loss=3093.6079
+[LSTM_Encoder_en2de] Epoch 15, Loss=3029.7664
+[LSTM_Encoder_en2de] Epoch 16, Loss=2970.3023
+[LSTM_Encoder_en2de] Epoch 17, Loss=2902.4728
+[LSTM_Encoder_en2de] Epoch 18, Loss=2858.9113
+[LSTM_Encoder_en2de] Epoch 19, Loss=2795.8951
+[LSTM_Encoder_en2de] Epoch 20, Loss=2754.3074
+[LSTM_Encoder_en2de] Epoch 21, Loss=2710.8250
+[LSTM_Encoder_en2de] Epoch 22, Loss=2671.9818
+[LSTM_Encoder_en2de] Epoch 23, Loss=2624.0691
+[LSTM_Encoder_en2de] Epoch 24, Loss=2584.8912
+[LSTM_Encoder_en2de] Epoch 25, Loss=2540.7465
+[LSTM_Encoder_en2de] Epoch 26, Loss=2505.6025
+[LSTM_Encoder_en2de] Epoch 27, Loss=2475.3855
+[LSTM_Encoder_en2de] Epoch 28, Loss=2433.6432
+[LSTM_Encoder_en2de] Epoch 29, Loss=2415.0159
+[LSTM_Encoder_en2de] Epoch 30, Loss=2377.7083
+[LSTM_Encoder_en2de] Epoch 31, Loss=2332.3747
+[LSTM_Encoder_en2de] Epoch 32, Loss=2293.7057
+[LSTM_Encoder_en2de] Epoch 33, Loss=2280.3035
+[LSTM_Encoder_en2de] Epoch 34, Loss=2239.6915
+[LSTM_Encoder_en2de] Epoch 35, Loss=2225.0989
+[LSTM_Encoder_en2de] Epoch 36, Loss=2187.6297
+[LSTM_Encoder_en2de] Epoch 37, Loss=2165.2233
+[LSTM_Encoder_en2de] Epoch 38, Loss=2147.0321
+[LSTM_Encoder_en2de] Epoch 39, Loss=2119.5458
+[LSTM_Encoder_en2de] Epoch 40, Loss=2092.7243
+[LSTM_Encoder_en2de] Epoch 41, Loss=2073.2022
+[LSTM_Encoder_en2de] Epoch 42, Loss=2039.3410
+[LSTM_Encoder_en2de] Epoch 43, Loss=2028.4687
+[LSTM_Encoder_en2de] Epoch 44, Loss=2000.3549
+[LSTM_Encoder_en2de] Epoch 45, Loss=1984.0060
+[LSTM_Encoder_en2de] Epoch 46, Loss=1962.9123
+[LSTM_Encoder_en2de] Epoch 47, Loss=1942.1807
+[LSTM_Encoder_en2de] Epoch 48, Loss=1927.7868
+[LSTM_Encoder_en2de] Epoch 49, Loss=1894.3814
+[LSTM_Encoder_en2de] Epoch 50, Loss=1877.7067
+[LSTM_Encoder_en2de] Eval Loss=4.4902, Token Accuracy=0.3541, BLEU=0.1956
+Freizeitbekleidung fährt auf der Nacht .
+Traktorfahrer Hängegurten Q&A. Fischernetz gleichausehende
+Margaritagläsern mutwillig schwarz-oranger Stofftaschen Tretroller Streien Verkaufswagen Bratenwender Abfluss Straßenrennens Keramik . Schneeburg Rennspiel Betoneinfassung kräftige Kuh auf Schneeburg Rennspiel Betoneinfassung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel Umarmung Schneeburg Rennspiel
+
+
+
+Train samples: 29000
+Test samples : 1000
+[LSTM_Encoder_en2de] Epoch 1, Loss=1857.8420
+[LSTM_Encoder_en2de] Epoch 2, Loss=1842.9132
+[LSTM_Encoder_en2de] Epoch 3, Loss=1835.0068
+[LSTM_Encoder_en2de] Epoch 4, Loss=1813.9907
+[LSTM_Encoder_en2de] Epoch 5, Loss=1797.8929
+[LSTM_Encoder_en2de] Epoch 6, Loss=1787.2389
+[LSTM_Encoder_en2de] Epoch 7, Loss=1758.4626
+[LSTM_Encoder_en2de] Epoch 8, Loss=1746.5385
+[LSTM_Encoder_en2de] Epoch 9, Loss=1726.8766
+[LSTM_Encoder_en2de] Epoch 10, Loss=1720.8477
+[LSTM_Encoder_en2de] Epoch 11, Loss=1712.5740
+[LSTM_Encoder_en2de] Epoch 12, Loss=1695.5950
+[LSTM_Encoder_en2de] Epoch 13, Loss=1674.9597
+[LSTM_Encoder_en2de] Epoch 14, Loss=1665.6031
+[LSTM_Encoder_en2de] Epoch 15, Loss=1655.4328
+[LSTM_Encoder_en2de] Epoch 16, Loss=1630.9248
+[LSTM_Encoder_en2de] Epoch 17, Loss=1628.5377
+[LSTM_Encoder_en2de] Epoch 18, Loss=1606.4598
+[LSTM_Encoder_en2de] Epoch 19, Loss=1596.8935
+[LSTM_Encoder_en2de] Epoch 20, Loss=1587.6307
+[LSTM_Encoder_en2de] Epoch 21, Loss=1575.2800
+[LSTM_Encoder_en2de] Epoch 22, Loss=1568.8287
+[LSTM_Encoder_en2de] Epoch 23, Loss=1562.8207
+[LSTM_Encoder_en2de] Epoch 24, Loss=1532.6188
+[LSTM_Encoder_en2de] Epoch 25, Loss=1524.5909
+[LSTM_Encoder_en2de] Epoch 26, Loss=1523.6246
+[LSTM_Encoder_en2de] Epoch 27, Loss=1516.5895
+[LSTM_Encoder_en2de] Epoch 28, Loss=1503.4416
+[LSTM_Encoder_en2de] Epoch 29, Loss=1497.4843
+[LSTM_Encoder_en2de] Epoch 30, Loss=1483.9877
+[LSTM_Encoder_en2de] Epoch 31, Loss=1481.4690
+[LSTM_Encoder_en2de] Epoch 32, Loss=1462.2952
+[LSTM_Encoder_en2de] Epoch 33, Loss=1460.4545
+[LSTM_Encoder_en2de] Epoch 34, Loss=1441.4555
+[LSTM_Encoder_en2de] Epoch 35, Loss=1439.0191
+[LSTM_Encoder_en2de] Epoch 36, Loss=1420.3733
+[LSTM_Encoder_en2de] Epoch 37, Loss=1415.8932
+[LSTM_Encoder_en2de] Epoch 38, Loss=1411.1503
+[LSTM_Encoder_en2de] Epoch 39, Loss=1405.0320
+[LSTM_Encoder_en2de] Epoch 40, Loss=1392.7194
+[LSTM_Encoder_en2de] Epoch 41, Loss=1375.6607
+[LSTM_Encoder_en2de] Epoch 42, Loss=1375.2732
+[LSTM_Encoder_en2de] Epoch 43, Loss=1372.2169
+[LSTM_Encoder_en2de] Epoch 44, Loss=1361.8852
+[LSTM_Encoder_en2de] Epoch 45, Loss=1355.2062
+[LSTM_Encoder_en2de] Epoch 46, Loss=1340.8899
+[LSTM_Encoder_en2de] Epoch 47, Loss=1336.8673
+[LSTM_Encoder_en2de] Epoch 48, Loss=1340.0995
+[LSTM_Encoder_en2de] Epoch 49, Loss=1324.4110
+[LSTM_Encoder_en2de] Epoch 50, Loss=1307.4800
+[LSTM_Encoder_en2de] Eval Loss=4.9251, Token Accuracy=0.3540, BLEU=0.2077
+Mannes fährt eine Zeitung .
+Jung drängelt niedliche Landebahn Hebekorb Diskussion nähen .
+Standes mittelgroße blau-orangen asiatisches bauschigen durchgeführt rotweißer auf Transportwagen .

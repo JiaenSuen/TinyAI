@@ -1,5 +1,5 @@
 from engine import Seq2SeqEngine
-from models import Encoder, Decoder, Seq2Seq
+from models import LSTM_Encoder  , LSTM_Decoder , Seq2Seq
 from engine import Seq2SeqEngine
 
 import os
@@ -25,16 +25,16 @@ print(f"Train samples: {len(data_en_train)}")
 print(f"Test samples : {len(data_en_test)}")
 
 engine = Seq2SeqEngine(
-    encoder_class=Encoder,
-    decoder_class=Decoder,
+    encoder_class=LSTM_Encoder,
+    decoder_class=LSTM_Decoder,
     src_lang="en",
     tgt_lang="de",
     encoder_params={"embedding_size":32, "hidden_size":64, "num_layers":1, "p":0.0},
     decoder_params={"embedding_size":32, "hidden_size":64, "num_layers":1, "p":0.0},
-    load_model=False
+    load_model=True
 )
 
-engine.train(data_en_train, data_de_train, epochs=5)
+engine.train(data_en_train, data_de_train, epochs=50)
 engine.evaluate(data_en_test, data_de_test)
 print(engine.translate("Foxes are adorable creatures."))
 print(engine.translate("A fox terrier leaps after a ball."))

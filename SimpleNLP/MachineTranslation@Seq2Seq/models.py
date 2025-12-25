@@ -3,9 +3,9 @@ import torch
 import torch.nn as nn
 import random
 
-class Encoder(nn.Module):
+class LSTM_Encoder(nn.Module):
     def __init__(self, input_size, embedding_size, hidden_size, num_layers, p):
-        super(Encoder, self).__init__()
+        super(LSTM_Encoder, self).__init__()
         self.hidden_size = hidden_size
         self.num_layers = num_layers
         self.dropout = nn.Dropout(p)
@@ -17,29 +17,49 @@ class Encoder(nn.Module):
         embedding = self.dropout(self.embedding(x))
         # embedding shape: (seq_length, N, embedding_size)
         outputs, (hidden, cell) = self.rnn(embedding)
-        return hidden, cell
+        # outputs shape: (seq_length, N, hidden_size)  # This is what we need for attention
+        return outputs, hidden, cell  # Changed: Return outputs as well
 
-class Decoder(nn.Module):
+class LSTM_Decoder(nn.Module):
     def __init__(self, input_size, embedding_size, hidden_size, output_size, num_layers, p):
-        super(Decoder, self).__init__()
+        super(LSTM_Decoder, self).__init__()
         self.hidden_size = hidden_size
         self.num_layers = num_layers
         self.dropout = nn.Dropout(p)
         self.embedding = nn.Embedding(input_size, embedding_size)
-        self.rnn = nn.LSTM(embedding_size, hidden_size, num_layers, dropout=p)
+        self.rnn = nn.LSTM(embedding_size + hidden_size, hidden_size, num_layers, dropout=p)  # Input size includes context
         self.fc = nn.Linear(hidden_size, output_size)
+        self.softmax = nn.Softmax(dim=1)  # For attention weights
 
-    def forward(self, x, hidden, cell):
-        # x shape: (N) where N is batch size, we want (1, N)
+    def forward(self, x, hidden, cell, encoder_outputs):
+        # x shape: (N) -> unsqueeze to (1, N)
         x = x.unsqueeze(0)
         embedding = self.dropout(self.embedding(x))
         # embedding shape: (1, N, embedding_size)
-        outputs, (hidden, cell) = self.rnn(embedding, (hidden, cell))
+
+        # Attention: Dot-product (Luong style)
+        # Assume single layer for simplicity; for multi-layer, use hidden[-1]
+        query = hidden[0].squeeze(0) if self.num_layers > 1 else hidden.squeeze(0)  # (N, hidden_size)
+        # encoder_outputs: (seq_len_src, N, hidden_size)
+        attn_scores = torch.einsum("nh, snh -> ns", query, encoder_outputs)  # (N, seq_len_src)
+        attn_weights = self.softmax(attn_scores)  # (N, seq_len_src)
+        context = torch.einsum("ns, snh -> nh", attn_weights, encoder_outputs)  # (N, hidden_size)
+        context = context.unsqueeze(0)  # (1, N, hidden_size)
+
+        # Concat embedding and context
+        rnn_input = torch.cat((embedding, context), dim=2)  # (1, N, embedding_size + hidden_size)
+        outputs, (hidden, cell) = self.rnn(rnn_input, (hidden, cell))
         # outputs shape: (1, N, hidden_size)
-        predictions = self.fc(outputs)
-        # predictions shape: (1, N, output_size)
-        predictions = predictions.squeeze(0)
+        predictions = self.fc(outputs).squeeze(0)  # (N, output_size)
         return predictions, hidden, cell
+
+
+
+
+
+
+
+
 
 
 
@@ -55,11 +75,11 @@ class Seq2Seq(nn.Module):
         target_vocab_size = self.decoder.fc.out_features
 
         outputs = torch.zeros(target_len, batch_size, target_vocab_size).to(source.device)
-        hidden, cell = self.encoder(source)
+        encoder_outputs, hidden, cell = self.encoder(source)  # Changed: Unpack encoder_outputs
         x = target[0]  # start token
 
         for t in range(1, target_len):
-            output, hidden, cell = self.decoder(x, hidden, cell)
+            output, hidden, cell = self.decoder(x, hidden, cell, encoder_outputs)  # Changed: Pass encoder_outputs
             outputs[t] = output
             best_guess = output.argmax(1)
             x = target[t] if random.random() < teach_force_ratio else best_guess
@@ -73,10 +93,10 @@ class Seq2Seq(nn.Module):
         """
         self.eval()
         with torch.no_grad():
-            hidden, cell = self.encoder(source)
+            encoder_outputs, hidden, cell = self.encoder(source)  # Changed: Unpack encoder_outputs
             batch_size = source.size(1)
 
-            # 使用 BOS token 或 source 第 0 個 token
+            # Use the BOS token or source the 0th token.
             if bos_id is not None:
                 x = torch.tensor([bos_id]*batch_size, device=source.device)
             else:
@@ -84,9 +104,9 @@ class Seq2Seq(nn.Module):
 
             outputs = []
             for _ in range(max_len):
-                output, hidden, cell = self.decoder(x, hidden, cell)
+                output, hidden, cell = self.decoder(x, hidden, cell, encoder_outputs)  # Changed: Pass encoder_outputs
                 best_guess = output.argmax(1)  # (batch_size,)
-                outputs.append(best_guess[0].item())  # 只取第一個句子
+                outputs.append(best_guess[0].item())   
                 x = best_guess
                 if eos_id is not None and best_guess[0].item() == eos_id:
                     break

@@ -18,8 +18,10 @@ class TranslationDataset(Dataset):
         self.tokenizer = MultilingualTokenizer()
 
         self.src_ids = [text_to_ids(self.tokenizer.tokenize(t, src_lang), src_vocab) for t in src_texts]
-        self.tgt_ids = [text_to_ids(self.tokenizer.tokenize(t, tgt_lang), tgt_vocab) for t in tgt_texts]
-
+        self.tgt_ids = [
+            [self.tgt_vocab["<BOS>"]] + text_to_ids(self.tokenizer.tokenize(t, tgt_lang), tgt_vocab) + [self.tgt_vocab["<EOS>"]]
+            for t in tgt_texts
+        ]
     def __len__(self):
         return len(self.src_ids)
 
@@ -73,7 +75,7 @@ class Seq2SeqEngine:
         if load_model and os.path.exists(self.param_path) and os.path.exists(self.vocab_path):
           self.load()
 
-    # --- Model Builder ---
+    # Model Builder
     def _build_model(self):
         encoder = self.encoder_class(input_size=len(self.src_vocab), **self.encoder_params)
         decoder = self.decoder_class(input_size=len(self.tgt_vocab),
@@ -82,38 +84,43 @@ class Seq2SeqEngine:
         from models import Seq2Seq   
         self.model = Seq2Seq(encoder, decoder).to(self.device)
 
-    # --- Training ---
+    # Training
     def train(self, src_texts, tgt_texts, epochs=10):
         
-        # --- Tokenize ---
-        tokenized_src = [self.tokenizer.tokenize(t, self.src_lang) for t in src_texts]
-        tokenized_tgt = [self.tokenizer.tokenize(t, self.tgt_lang) for t in tgt_texts]
+        if self.src_vocab is None or self.tgt_vocab is None:
+            # Tokenize(Executes only if not loaded)
+            tokenized_src = [self.tokenizer.tokenize(t, self.src_lang) for t in src_texts]
+            tokenized_tgt = [self.tokenizer.tokenize(t, self.tgt_lang) for t in tgt_texts]
 
-        # --- Build vocab automatically ---
-        self.src_vocab = {PAD:0, UNK:1}
-        for tokens in tokenized_src:
-            for t in tokens:
-                if t not in self.src_vocab:
-                    self.src_vocab[t] = len(self.src_vocab)
+            # Build vocab automatically
+            self.src_vocab = {PAD:0, UNK:1}
+            for tokens in tokenized_src:
+                for t in tokens:
+                    if t not in self.src_vocab:
+                        self.src_vocab[t] = len(self.src_vocab)
 
-        self.tgt_vocab = {PAD:0, UNK:1, "<BOS>":2, "<EOS>":3}
-        for tokens in tokenized_tgt:
-            for t in tokens:
-                if t not in self.tgt_vocab:
-                    self.tgt_vocab[t] = len(self.tgt_vocab)
+            self.tgt_vocab = {PAD:0, UNK:1, "<BOS>":2, "<EOS>":3}
+            for tokens in tokenized_tgt:
+                for t in tokens:
+                    if t not in self.tgt_vocab:
+                        self.tgt_vocab[t] = len(self.tgt_vocab)
 
-        # --- Dataset ---
+        # Dataset ( build, because the data may be new, but the vocab uses what is already available)
         dataset = TranslationDataset(
             src_texts, tgt_texts, self.src_vocab, self.tgt_vocab, self.src_lang, self.tgt_lang
         )
         dataloader = DataLoader(dataset, batch_size=self.batch_size, shuffle=True, collate_fn=seq2seq_collate_fn)
 
-        # --- Build Model ---
-        self._build_model()
+        if self.model is None:
+            #  Build Model  (Create new models only when they are not loaded)
+            self._build_model()
 
         criterion = nn.CrossEntropyLoss(ignore_index=self.tgt_vocab[PAD])
-        optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)
-
+        
+        if not hasattr(self, 'optimizer') or self.optimizer is None:
+            #  Build Optimizer (If not loaded, create a new one; otherwise, use the loaded one.)
+            self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)
+        
         self.model.train()
         for ep in range(epochs):
             total_loss = 0
@@ -121,21 +128,22 @@ class Seq2SeqEngine:
                 src_ids = src_ids.transpose(0,1).to(self.device)  # seq_len x batch
                 tgt_ids = tgt_ids.transpose(0,1).to(self.device)  # seq_len x batch
 
-                optimizer.zero_grad()
+                self.optimizer.zero_grad()
                 outputs = self.model(src_ids, tgt_ids)
                 loss = criterion(
                     outputs[1:].reshape(-1, outputs.shape[-1]),
                     tgt_ids[1:].reshape(-1)
                 )
                 loss.backward()
-                optimizer.step()
+                torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
+                self.optimizer.step()
                 total_loss += loss.item()
 
             print(f"[{self.model_name}] Epoch {ep+1}, Loss={total_loss:.4f}")
 
         self.save()
 
-    # --- Evaluation ---
+    # Evaluation 
     def evaluate(self, src_texts, tgt_texts):
         """
         - Loss (CrossEntropyLoss)
@@ -165,7 +173,7 @@ class Seq2SeqEngine:
                 src_ids = src_ids.transpose(0,1).to(self.device)
                 tgt_ids = tgt_ids.transpose(0,1).to(self.device)
 
-                outputs = self.model(src_ids, tgt_ids)
+                outputs = self.model(src_ids, tgt_ids, teach_force_ratio=0.0)
                 loss = criterion(
                     outputs[1:].reshape(-1, outputs.shape[-1]),
                     tgt_ids[1:].reshape(-1)
@@ -225,9 +233,13 @@ class Seq2SeqEngine:
         tokens = [id2token.get(i, UNK) for i in pred_ids if i not in {self.tgt_vocab.get(PAD), self.tgt_vocab.get("<BOS>"), self.tgt_vocab.get("<EOS>")}]
         return " ".join(tokens)
 
-    # --- Save / Load ---
+    # Save / Load 
     def save(self):
-        torch.save(self.model.state_dict(), self.param_path)
+        state = {
+            'model_state': self.model.state_dict(),
+            'optimizer_state': self.optimizer.state_dict() if hasattr(self, 'optimizer') else None,
+        }
+        torch.save(state, self.param_path)
         with open(self.vocab_path, "w", encoding="utf-8") as f:
             json.dump({"src_vocab":self.src_vocab, "tgt_vocab":self.tgt_vocab}, f, ensure_ascii=False)
 
@@ -237,5 +249,9 @@ class Seq2SeqEngine:
         self.src_vocab = vocabs["src_vocab"]
         self.tgt_vocab = vocabs["tgt_vocab"]
         self._build_model()
-        self.model.load_state_dict(torch.load(self.param_path, map_location=self.device,weights_only=True))
+        state = torch.load(self.param_path, map_location=self.device, weights_only=True)
+        self.model.load_state_dict(state['model_state'])
+        if 'optimizer_state' in state and state['optimizer_state']:
+            self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)  # optimizer
+            self.optimizer.load_state_dict(state['optimizer_state'])
         self.model.eval()
