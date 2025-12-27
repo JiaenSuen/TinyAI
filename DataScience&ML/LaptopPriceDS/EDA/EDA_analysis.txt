@@ -1,0 +1,38 @@
+1. Numerical Feature Distributions
+----------------------------------
+Histograms of numerical features show the overall distribution and skewness of each variable.
+Several features exhibit right-skewed distributions, indicating the presence of high-value outliers.
+Boxplots further confirm the existence of outliers, especially in price-related features.
+
+2. Categorical Feature Analysis
+-------------------------------
+Bar charts of categorical variables (top 20 categories) reveal that some features have dominant
+categories, while others show a long-tail distribution. This suggests that rare categories may need
+to be grouped or encoded carefully during feature engineering.
+
+3. Price Distribution
+---------------------
+The price distribution is right-skewed, indicating that most laptops fall into lower to mid-price
+ranges, with fewer high-end expensive models. A log transformation of price may be beneficial for
+modeling.
+
+4. Price by Company
+-------------------
+The boxplot of Price by Company (Top 10 brands) shows clear price differences among manufacturers.
+Premium brands tend to have higher median prices and wider price ranges, while budget brands show
+lower and more compact distributions.
+
+5. Numerical Features vs Price
+-------------------------------
+Scatter plots between numerical features and price suggest varying degrees of correlation.
+Some features display a positive relationship with price, while others show weak or no clear trends.
+These plots help identify potentially important predictors for regression models.
+
+6. Correlation Heatmap
+---------------------
+The correlation heatmap visualizes linear relationships among numerical features.
+Strong correlations between certain variables indicate possible redundancy, while features with
+higher correlation to price are likely to be more informative for predictive modeling.
+
+Overall, this EDA provides insights into data quality, feature distributions, and relationships,
+forming a solid foundation for data cleaning, feature engineering, and model selection.
