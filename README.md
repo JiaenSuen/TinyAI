@@ -19,7 +19,7 @@ A series of Small Deep Learning Side Projects
 <br>
 
 ## Simple NLP Projects
-[Route To Folder](SimpleNLP/)
+[Route To Folder](SimpleNLP/)   
 In this section , storage some of little projects combine NLP and Neural Networks.
 
 * Text Classifier : IMDB Appraise Classifier
@@ -31,14 +31,14 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br>
 
 ## Simple RL Projects
-[Route To Folder](SimpleRL/)
+[Route To Folder](SimpleRL/)  
 * MiniGrid Spatial Navigation and Exploration Experiment: CNN-LSTM Based DRL
 * Q-Learning : Simple Maze Solve
 <br> 
 <br>
 
 ## Simple Recommender System
-[Route To Folder](SimpleRecommender/)
+[Route To Folder](SimpleRecommender/)  
 From Zero To Advance
 
 * Cities Recommendation By Location 
@@ -48,14 +48,14 @@ From Zero To Advance
 <br>
 
 ## Simple Time Series
-[Route To Folder](SimpleTimeSeries/)
+[Route To Folder](SimpleTimeSeries/)  
 * Amazon Time Series Stock Price Prediction
 
 <br> 
 <br>
 
 ## Simple Graphs Projects
-[Route To Folder](SimpleGraphsDL/)
+[Route To Folder](SimpleGraphsDL/)  
 * CoRA : Scientific Publications Classification
 
 <br> 
@@ -63,7 +63,7 @@ From Zero To Advance
 
 
 ## Langchain
-[Route To Folder](LangchainAI/)
+[Route To Folder](LangchainAI/)  
 * Pizza Reviws ReadingBot with Langchain CSV Context Engineering
 * Ollama Context Engineering Using PDFs : Red Fox Introduction
 
@@ -71,7 +71,7 @@ From Zero To Advance
 <br>
 
 ## Develope ChatBots
-[Route To Folder](DevChatBots/)
+[Route To Folder](DevChatBots/)   
 * ChatBot-small-ex-001 : NLP+ANN
 <br> 
 <br>
