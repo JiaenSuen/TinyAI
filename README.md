@@ -31,7 +31,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br>
 
 ## Simple RL Projects
-
+* MiniGrid Spatial Navigation and Exploration Experiment: CNN-LSTM Based Deep Reinforcement Learning
 * Q-Learning : Simple Maze Solve
 <br> 
 <br>
