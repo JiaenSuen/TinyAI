@@ -1,0 +1,10 @@
+MiniGrid CNN Model Test Report
+Date: 2026-01-06 04:05:13
+Environment: MiniGrid-MultiRoom-N2-S4-v0
+Test Maps: 100
+
+Success Rate: 0.9900 (99/100)
+Average Steps per Episode: 7.81
+Average Reward: 3.4465
+Total Cost (Steps): 781
+
