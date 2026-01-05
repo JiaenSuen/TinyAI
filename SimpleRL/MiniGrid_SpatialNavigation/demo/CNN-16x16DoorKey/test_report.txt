@@ -1,5 +1,4 @@
 MiniGrid CNN Model Test Report
-Date: 2026-01-04 02:04:43
 Environment: MiniGrid-DoorKey-16x16-v0
 Test Maps: 100
 

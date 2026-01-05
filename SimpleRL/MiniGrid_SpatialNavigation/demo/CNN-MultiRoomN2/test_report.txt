@@ -1,5 +1,4 @@
 MiniGrid CNN Model Test Report
-Date: 2026-01-06 04:05:13
 Environment: MiniGrid-MultiRoom-N2-S4-v0
 Test Maps: 100
 
