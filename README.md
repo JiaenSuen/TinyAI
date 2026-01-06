@@ -6,7 +6,7 @@ A series of Small Deep Learning Side Projects
 <br>
 
 
-  ![Image](arctic-fox.jpg)
+![Image](arctic-fox.jpg)
 
 
 
@@ -14,7 +14,7 @@ A series of Small Deep Learning Side Projects
 [Route To Folder](DataScience&ML/)
 * Rain Predictor : Machine Learing Midterm Report ,2024  
 * Spam Classifier using Naive Bayes
-
+* LaptopPriceDS
 <br> 
 <br>
 
