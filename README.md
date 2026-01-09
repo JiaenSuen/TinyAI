@@ -12,6 +12,7 @@ A series of Small Deep Learning Side Projects
 
 ## Data Science & Machine Learning Projects
 [Route To Folder](DataScience&ML/)
+* Rental Price Prediction in a Housing Rental Support System Using Residual Aware Learning Module : Published at 2025 TANet Conference ,Taiwan
 * Rain Predictor : Machine Learing Midterm Report ,2024  
 * Spam Classifier using Naive Bayes
 * LaptopPriceDS
