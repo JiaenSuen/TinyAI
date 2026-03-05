@@ -10,7 +10,7 @@ class Residual_Stack:
 
     def fit(self, X, y):
         # Train Base Layer
-	y = np.ravel(y)
+	#y = np.ravel(y)
         self.base_model.fit(X, y)
         base_pred = self.base_model.predict(X)
 
