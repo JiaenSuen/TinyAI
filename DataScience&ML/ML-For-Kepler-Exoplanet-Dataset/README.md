@@ -178,4 +178,4 @@ feature patterns.
 With no auto feature engineering
  (Hist Gradient Boost)
 
-![image](record/Passive%20Aggressive_cm_report.png)
+![image](record/HistGradientBoost_cm_report.png)
