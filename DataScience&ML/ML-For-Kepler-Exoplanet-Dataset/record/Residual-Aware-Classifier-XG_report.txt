@@ -1,0 +1,11 @@
+Accuracy: 0.8343
+
+                 precision    recall  f1-score   support
+
+False positives       0.88      0.93      0.91       957
+     Candidates       0.71      0.52      0.60       415
+      Confirmed       0.81      0.90      0.86       541
+
+       accuracy                           0.83      1913
+      macro avg       0.80      0.79      0.79      1913
+   weighted avg       0.83      0.83      0.83      1913
