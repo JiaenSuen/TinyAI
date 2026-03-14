@@ -1,0 +1,4 @@
+Best hyperparameters: lr=0.010000, hidden=405
+
+iteration: 100 ; accuracy: 0.9893
+Test accuracy: 0.9753
