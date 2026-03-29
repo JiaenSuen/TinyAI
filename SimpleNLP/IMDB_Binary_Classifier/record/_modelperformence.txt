@@ -1,0 +1,14 @@
+# MLP + TF-IDF
+Final Test Result
+Test Loss : 0.7808
+Test Acc  : 0.8742
+
+# Embedding + LSTM
+Final Test Result
+Test Loss : 0.6313
+Test Acc  : 0.8655
+
+# TextCNN
+Final Test Result
+Test Loss : 0.6629
+Test Acc  : 0.8696

@@ -1,6 +1,6 @@
 
 # Vocab : Dict 
-from tokenizer import simple_tokenizer
+from dataset.tokenizer import simple_tokenizer
 from collections import Counter
 
 def build_vocab(texts):
@@ -12,7 +12,7 @@ def build_vocab(texts):
     max_vocab_size = 10000
     most_common = counter.most_common(max_vocab_size - 2)  # minus PAD、UNK
 
-    # 建立 vocab dict
+    # build vocab dict
     vocab = {'<PAD>': 0, '<UNK>': 1}
     for idx, (word, freq) in enumerate(most_common, start=2):
         vocab[word] = idx
