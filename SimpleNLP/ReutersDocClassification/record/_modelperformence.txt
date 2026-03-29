@@ -1,0 +1,14 @@
+# MLP + TF-IDF
+
+
+# Embedding + LSTM
+Final Test Result - GRU
+Test Acc  : 0.8261
+
+
+# Embedding + GRU
+
+
+# TextCNN
+Final Test Result - TEXTCNN
+Test Acc  : 0.8658
