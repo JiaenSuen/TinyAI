@@ -27,6 +27,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 
 * Text Classifier : IMDB Appraise Classifier [link](SimpleNLP/IMDB_Binary_Classifier/)  
 * AG News Classification : Embedding + LSTM [link](SimpleNLP/AGNewsClassification/)
+* Reuters Doc Classification [link](SimpleNLP/ReutersDocClassification/)
 * Simple NER : Text Script Convert To Order List [link](SimpleNLP/SimpleNER_Script2Order/)
 * NLP Libary for Deep Learning : Pytorch [link](SimpleNLP/NLP_Lib_forDL/)
 * MachineTranslation : LSTM - Sequence to Sequence [link](SimpleNLP/MachineTranslation@Seq2Seq/)

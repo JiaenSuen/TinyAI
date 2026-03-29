@@ -135,7 +135,7 @@ Epoch 17: Loss = 0.0161, Accuracy = 0.9956
 Epoch 18: Loss = 0.0147, Accuracy = 0.9962  
 Epoch 19: Loss = 0.0214, Accuracy = 0.9940   
 
-
+![record](comparison_all_models.png)
 ### Test Dataset Performence
 
 Test Accuracy = 0.9606
