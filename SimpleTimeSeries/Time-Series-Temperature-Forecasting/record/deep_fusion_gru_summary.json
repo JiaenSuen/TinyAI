@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-05-06T22:40:05",
+  "model": "deep_fusion_gru",
+  "csv_path": "jena_climate_2009_2016.csv",
+  "seed": 42,
+  "device": "cuda",
+  "rows": 420551,
+  "features": 14,
+  "target_feature": "T (degC)",
+  "lookback": 720,
+  "delay": 144,
+  "step": 3,
+  "effective_seq_len": 240,
+  "train_ratio": 0.7,
+  "val_ratio": 0.1,
+  "train_samples": 293521,
+  "val_samples": 41911,
+  "test_samples": 83967,
+  "train_time_range": [
+    "2009-01-07 00:10:00",
+    "2014-08-05 02:20:00"
+  ],
+  "val_time_range": [
+    "2014-08-06 02:30:00",
+    "2015-05-24 19:20:00"
+  ],
+  "test_time_range": [
+    "2015-05-25 19:30:00",
+    "2017-01-01 00:00:00"
+  ],
+  "total_parameters": 441349,
+  "trainable_parameters": 441349,
+  "checkpoint_path": "checkpoints/deep_fusion_gru_best.pt",
+  "best_epoch": 1,
+  "best_val_rmse_c": 2.9547707973845876,
+  "best_val_mae_c": 2.280285759379023,
+  "best_val_mse_norm": 0.11657074442232992,
+  "final_val_rmse_c": 2.9547707973845876,
+  "final_val_mae_c": 2.280285759379023,
+  "final_val_mse_norm": 0.11657074442232992,
+  "final_test_rmse_c": 3.1263126663747727,
+  "final_test_mae_c": 2.4354715397831925,
+  "final_test_mse_norm": 0.130498883319189,
+  "history_csv": "TrainRecord/deep_fusion_gru_record.csv",
+  "val_predictions_csv": "record/deep_fusion_gru_val_predictions.csv",
+  "test_predictions_csv": "record/deep_fusion_gru_test_predictions.csv"
+}

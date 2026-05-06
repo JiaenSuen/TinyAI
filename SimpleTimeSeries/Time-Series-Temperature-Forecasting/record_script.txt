@@ -1,0 +1,185 @@
+# LSTM
+Final Report
+Best epoch: 3
+Best val RMSE: 3.1090 °C
+Best val MAE : 2.4065 °C
+Validation RMSE (best checkpoint): 3.1090 °C
+Validation MAE  (best checkpoint): 2.4065 °C
+Test MSE  : 0.130562   (normalized)
+Test MAE  : 2.4500 °C
+Test RMSE : 3.1271 °C
+
+
+
+Final Report
+# gru
+Best epoch: 4
+Best val RMSE: 3.0039 °C
+Best val MAE : 2.3402 °C
+Validation RMSE (best checkpoint): 3.0039 °C
+Validation MAE  (best checkpoint): 2.3402 °C
+Test MSE  : 0.122543   (normalized)
+Test MAE  : 2.3699 °C
+Test RMSE : 3.0295 °C
+
+
+
+
+Final Report
+# convlstm
+Best epoch: 2
+Best val RMSE: 3.0758 °C
+Best val MAE : 2.4064 °C
+Validation RMSE (best checkpoint): 3.0758 °C
+Validation MAE  (best checkpoint): 2.4064 °C
+Test MSE  : 0.128326   (normalized)
+Test MAE  : 2.4247 °C
+Test RMSE : 3.1002 °C
+
+
+Final Report
+# cnn_gru
+Best epoch: 4
+Best val RMSE: 3.0047 °C
+Best val MAE : 2.3133 °C
+Validation RMSE (best checkpoint): 3.0047 °C
+Validation MAE  (best checkpoint): 2.3133 °C
+Test MSE  : 0.132945   (normalized)
+Test MAE  : 2.4813 °C
+Test RMSE : 3.1555 °C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# selfattn_gru
+Best epoch: 2
+Best val RMSE: 2.9805 °C
+Best val MAE : 2.2991 °C
+Validation RMSE (best checkpoint): 2.9805 °C
+Validation MAE  (best checkpoint): 2.2991 °C
+Test MSE  : 0.132972   (normalized)
+Test MAE  : 2.4624 °C
+Test RMSE : 3.1558 °C
+
+
+Final Report
+# multiattn_gru
+Best epoch: 1
+Best val RMSE: 2.9929 °C
+Best val MAE : 2.3078 °C
+Validation RMSE (best checkpoint): 2.9929 °C
+Validation MAE  (best checkpoint): 2.3078 °C
+Test MSE  : 0.133042   (normalized)
+Test MAE  : 2.4764 °C
+Test RMSE : 3.1566 °C
+
+
+# luong_gru
+Best epoch: 3
+Best val RMSE: 2.9597 °C
+Best val MAE : 2.2809 °C
+Validation RMSE (best checkpoint): 2.9597 °C
+Validation MAE  (best checkpoint): 2.2809 °C
+Test MSE  : 0.120299   (normalized)
+Test MAE  : 2.3615 °C
+Test RMSE : 3.0017 °C
+
+
+Final Report
+# cnn_gru_lstm
+Best epoch: 4
+Best val RMSE: 3.0749 °C
+Best val MAE : 2.3924 °C
+Validation RMSE (best checkpoint): 3.0749 °C
+Validation MAE  (best checkpoint): 2.3924 °C
+Test MSE  : 0.124882   (normalized)
+Test MAE  : 2.4011 °C
+Test RMSE : 3.0583 °C
+
+
+Final Report
+# stacked_gru_lstm
+Best epoch: 2
+Best val RMSE: 3.0688 °C
+Best val MAE : 2.3778 °C
+Validation RMSE (best checkpoint): 3.0688 °C
+Validation MAE  (best checkpoint): 2.3778 °C
+Test MSE  : 0.128759   (normalized)
+Test MAE  : 2.4124 °C
+Test RMSE : 3.1054 °C
+
+
+
+Final Report
+# gru_transformer
+Best epoch: 1
+Best val RMSE: 3.0821 °C
+Best val MAE : 2.4359 °C
+Validation RMSE (best checkpoint): 3.0821 °C
+Validation MAE  (best checkpoint): 2.4359 °C
+Test MSE  : 0.135168   (normalized)
+Test MAE  : 2.5003 °C
+Test RMSE : 3.1817 °C
+
+
+Final Report
+# deep_fusion_gru
+Best epoch: 1
+Best val RMSE: 2.9548 °C
+Best val MAE : 2.2803 °C
+Validation RMSE (best checkpoint): 2.9548 °C
+Validation MAE  (best checkpoint): 2.2803 °C
+Test MSE  : 0.130499   (normalized)
+Test MAE  : 2.4355 °C
+Test RMSE : 3.1263 °C
+
+
+
+
+
+Final Report
+# transformer
+Best epoch: 1
+Best val RMSE: 3.2844 °C
+Best val MAE : 2.5609 °C
+Validation RMSE (best checkpoint): 3.2844 °C
+Validation MAE  (best checkpoint): 2.5609 °C
+Test MSE  : 0.202374   (normalized)
+Test MAE  : 2.9268 °C
+Test RMSE : 3.8932 °C
+
+
+Final Report
+# itransformer
+Best epoch: 1
+Best val RMSE: 3.3594 °C
+Best val MAE : 2.6568 °C
+Validation RMSE (best checkpoint): 3.3594 °C
+Validation MAE  (best checkpoint): 2.6568 °C
+Test MSE  : 0.181223   (normalized)
+Test MAE  : 2.8136 °C
+Test RMSE : 3.6841 °C
+
+
+
+# nbeats
+Best epoch: 9
+Best val RMSE: 3.3672 °C
+Best val MAE : 2.6352 °C
+Validation RMSE (best checkpoint): 3.3672 °C
+Validation MAE  (best checkpoint): 2.6352 °C
+Test MSE  : 23.486401   (normalized)
+Test MAE  : 5.7581 °C
+Test RMSE : 41.9409 °C

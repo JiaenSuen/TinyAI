@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-05-06T20:09:18",
+  "model": "transformer",
+  "csv_path": "jena_climate_2009_2016.csv",
+  "seed": 42,
+  "device": "cuda",
+  "rows": 420551,
+  "features": 14,
+  "target_feature": "T (degC)",
+  "lookback": 720,
+  "delay": 144,
+  "step": 3,
+  "effective_seq_len": 240,
+  "train_ratio": 0.7,
+  "val_ratio": 0.1,
+  "train_samples": 293521,
+  "val_samples": 41911,
+  "test_samples": 83967,
+  "train_time_range": [
+    "2009-01-07 00:10:00",
+    "2014-08-05 02:20:00"
+  ],
+  "val_time_range": [
+    "2014-08-06 02:30:00",
+    "2015-05-24 19:20:00"
+  ],
+  "test_time_range": [
+    "2015-05-25 19:30:00",
+    "2017-01-01 00:00:00"
+  ],
+  "total_parameters": 627841,
+  "trainable_parameters": 627841,
+  "checkpoint_path": "checkpoints/transformer_best.pt",
+  "best_epoch": 1,
+  "best_val_rmse_c": 3.284363066832818,
+  "best_val_mae_c": 2.560878612127566,
+  "best_val_mse_norm": 0.144027125663407,
+  "final_val_rmse_c": 3.284363066832818,
+  "final_val_mae_c": 2.560878612127566,
+  "final_val_mse_norm": 0.144027125663407,
+  "final_test_rmse_c": 3.8932006426727916,
+  "final_test_mae_c": 2.9267890404812733,
+  "final_test_mse_norm": 0.20237438608564895,
+  "history_csv": "TrainRecord/transformer_record.csv",
+  "val_predictions_csv": "record/transformer_val_predictions.csv",
+  "test_predictions_csv": "record/transformer_test_predictions.csv"
+}
