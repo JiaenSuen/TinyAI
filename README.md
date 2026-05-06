@@ -55,7 +55,7 @@ From Zero To Advance
 ## Simple Time Series
 [Route To Folder](SimpleTimeSeries/)  
 * Amazon Time Series Stock Price Prediction   [link](/SimpleTimeSeries/LSTM_Amazon_Stock_Forecasting/)
-
+* Time Series Temperature Forecasting         [link](/SimpleTimeSeries/Time-Series-Temperature-Forecasting/)
 <br> 
 <br>
 
