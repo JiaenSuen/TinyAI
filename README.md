@@ -16,7 +16,7 @@ A series of Small Deep Learning Side Projects
 * Rain Predictor : Machine Learing Midterm Report ,2024  [link](DataScience&ML/RainPredictor)  
 * Spam Classifier using Naive Bayes [link](DataScience&ML/SpamClassifier_%20NaiveBayes/)   
 * LaptopPriceDS  [link](DataScience&ML/LaptopPriceDS)  
-* ML for Kepler Exoplanet Dataset [link](DataScience&ML/ML-For-Kepler-Exoplanet-Dataset)
+* Gradient Boosting Decision Tree and Fast Automatic Feature Engineering Using Single Neurons for Kepler Exoplanet Dataset [link](DataScience&ML/ML-For-Kepler-Exoplanet-Dataset)
 * Fox Optimizer Hyperparameter Search for Neural Network [link](DataScience&ML/FoxOptimizer_for_NeuralNetwork)
 <br> 
 <br>
