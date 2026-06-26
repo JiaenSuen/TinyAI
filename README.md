@@ -15,7 +15,7 @@ A series of Small Deep Learning Side Projects
 * Rental Price Prediction in a Housing Rental Support System Using Residual Aware Learning Module : Published at 2025 TANet Conference ,Taiwan [link](DataScience&ML/ResidualAwareML-RentalHousePricePredict)
 * Rain Predictor : Machine Learing Midterm Report ,2024  [link](DataScience&ML/RainPredictor)  
 * Spam Classifier using Naive Bayes [link](DataScience&ML/SpamClassifier_%20NaiveBayes/)   
-* LaptopPriceDS  [link](DataScience&ML/LaptopPriceDS)  
+* LaptopPrice Data Science and Data Analysis  [link](DataScience&ML/LaptopPriceDS)  
 * Gradient Boosting Decision Tree and Fast Automatic Feature Engineering Using Single Neurons for Kepler Exoplanet Dataset [link](DataScience&ML/ML-For-Kepler-Exoplanet-Dataset)
 * Fox Optimizer Hyperparameter Search for Neural Network [link](DataScience&ML/FoxOptimizer_for_NeuralNetwork)
 <br> 
