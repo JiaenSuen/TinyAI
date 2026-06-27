@@ -21,7 +21,7 @@ A series of Small Deep Learning Side Projects
 <br> 
 <br>
 
-## Simple NLP Projects
+## Tiny NLP Projects
 [Route To Folder](SimpleNLP/)   
 In this section , storage some of little projects combine NLP and Neural Networks.
 
@@ -34,7 +34,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br> 
 <br>
 
-## Simple RL Projects
+## Tiny RL Projects
 [Route To Folder](SimpleRL/)  
 * MiniGrid Spatial Navigation and Exploration Experiment: CNN-LSTM Based DRL  [link](SimpleRL/MiniGrid_SpatialNavigation/)  
 * Implement Deep Reinforcement Learning Play Greedy Snake Game with DQN & MLP  [link](SimpleRL/GreedySnake_MLP_DQN/) 
@@ -42,7 +42,7 @@ In this section , storage some of little projects combine NLP and Neural Network
 <br> 
 <br>
 
-## Simple Recommender System
+## Tiny Recommender System
 [Route To Folder](SimpleRecommender/)  
 From Zero To Advance
 
@@ -52,7 +52,7 @@ From Zero To Advance
 <br> 
 <br>
 
-## Simple Time Series
+## Time Series
 [Route To Folder](SimpleTimeSeries/)  
 * Beyond Classical Sequence Models for Limited-Data Predictive Maintenance  [link](/SimpleTimeSeries/Limited-Data-Predictive-Maintenance/)
 * Multivariate models facing Temperature-Forecasting experiments            [link](/SimpleTimeSeries/Time-Series-Temperature-Forecasting/)
@@ -60,7 +60,7 @@ From Zero To Advance
 <br> 
 <br>
 
-## Simple Graphs Projects
+## Graphs Learning Projects
 [Route To Folder](SimpleGraphsDL/)  
 * CoRA : Scientific Publications Classification   [link](/SimpleGraphsDL/CoRAwithGraphsNN/)  
 
