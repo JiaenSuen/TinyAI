@@ -1,0 +1,55 @@
+Model: patch_tst
+Model configuration: {'class_name': 'PatchTSTClassifier', 'model_kwargs': {'d_model': 96, 'patch_length': 24, 'stride': 12, 'nhead': 4, 'num_layers': 2, 'dim_feedforward': 192, 'dropout': 0.2}, 'training_kwargs': {'learning_rate': 0.0003, 'weight_decay': 0.0001}}
+Loss strategy: focal
+Focal gamma: 2.0
+Class-weight power: 0.5
+Trainable parameters: 243,462
+Best epoch: 6
+Best Macro-Recall: 58.81%
+Final test loss: 0.1043
+Final accuracy: 85.14%
+Final Macro-Recall: 58.59%
+Recall-none: 86.98% | Recall-comp1: 44.00% | Recall-comp2: 52.69% | Recall-comp3: 54.90% | Recall-comp4: 54.39%
+
+Training class distribution and weights
+====================================================================================================
+none: count=7240, weight=0.2583
+comp1: count=384, weight=1.1215
+comp2: count=504, weight=0.9789
+comp3: count=246, weight=1.4012
+comp4: count=314, weight=1.2402
+
+Epoch history
+====================================================================================================
+Epoch 01/10 | Train Loss: 0.3231 | Train Acc: 81.87% | Validation Loss: 0.1469 | Recall-none: 99.98% | Recall-comp1: 0.00% | Recall-comp2: 0.00% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Validation Macro-Recall: 20.00%
+Epoch 02/10 | Train Loss: 0.2810 | Train Acc: 80.93% | Validation Loss: 0.1429 | Recall-none: 89.92% | Recall-comp1: 0.00% | Recall-comp2: 51.59% | Recall-comp3: 14.04% | Recall-comp4: 18.06% | Validation Macro-Recall: 34.72%
+Epoch 03/10 | Train Loss: 0.2458 | Train Acc: 80.56% | Validation Loss: 0.1189 | Recall-none: 98.30% | Recall-comp1: 0.00% | Recall-comp2: 34.92% | Recall-comp3: 31.58% | Recall-comp4: 2.78% | Validation Macro-Recall: 33.52%
+Epoch 04/10 | Train Loss: 0.2222 | Train Acc: 81.40% | Validation Loss: 0.1470 | Recall-none: 84.20% | Recall-comp1: 29.49% | Recall-comp2: 52.38% | Recall-comp3: 45.61% | Recall-comp4: 20.83% | Validation Macro-Recall: 46.50%
+Epoch 05/10 | Train Loss: 0.1974 | Train Acc: 82.91% | Validation Loss: 0.1062 | Recall-none: 92.74% | Recall-comp1: 8.97% | Recall-comp2: 57.94% | Recall-comp3: 43.86% | Recall-comp4: 31.94% | Validation Macro-Recall: 47.09%
+Epoch 06/10 | Train Loss: 0.1663 | Train Acc: 84.02% | Validation Loss: 0.1149 | Recall-none: 86.03% | Recall-comp1: 42.31% | Recall-comp2: 57.14% | Recall-comp3: 54.39% | Recall-comp4: 54.17% | Validation Macro-Recall: 58.81%
+Epoch 07/10 | Train Loss: 0.1492 | Train Acc: 83.76% | Validation Loss: 0.1087 | Recall-none: 93.05% | Recall-comp1: 37.18% | Recall-comp2: 34.92% | Recall-comp3: 56.14% | Recall-comp4: 44.44% | Validation Macro-Recall: 53.15%
+Epoch 08/10 | Train Loss: 0.1349 | Train Acc: 83.99% | Validation Loss: 0.1300 | Recall-none: 78.54% | Recall-comp1: 57.69% | Recall-comp2: 46.83% | Recall-comp3: 56.14% | Recall-comp4: 37.50% | Validation Macro-Recall: 55.34%
+Epoch 09/10 | Train Loss: 0.1250 | Train Acc: 84.43% | Validation Loss: 0.1216 | Recall-none: 86.12% | Recall-comp1: 47.44% | Recall-comp2: 37.30% | Recall-comp3: 47.37% | Recall-comp4: 58.33% | Validation Macro-Recall: 55.31%
+Epoch 10/10 | Train Loss: 0.1089 | Train Acc: 84.58% | Validation Loss: 0.1409 | Recall-none: 80.30% | Recall-comp1: 50.00% | Recall-comp2: 41.27% | Recall-comp3: 49.12% | Recall-comp4: 38.89% | Validation Macro-Recall: 51.92%
+
+Classification report
+====================================================================================================
+Class            Precision      Recall    F1-score     Support
+--------------------------------------------------------------
+none                97.52%      86.98%      91.95%        5109
+comp1               10.68%      44.00%      17.19%          75
+comp2               17.75%      52.69%      26.56%          93
+comp3               23.93%      54.90%      33.33%          51
+comp4               24.60%      54.39%      33.88%          57
+--------------------------------------------------------------
+accuracy                                    85.14%        5385
+macro avg           34.90%      58.59%      40.58%        5385
+weighted avg        93.46%      85.14%      88.61%        5385
+
+Confusion matrix
+====================================================================================================
+[[4444  271  223   80   91]
+ [  34   33    2    4    2]
+ [  36    2   49    5    1]
+ [  19    1    2   28    1]
+ [  24    2    0    0   31]]

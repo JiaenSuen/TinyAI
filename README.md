@@ -54,6 +54,7 @@ From Zero To Advance
 
 ## Simple Time Series
 [Route To Folder](SimpleTimeSeries/)  
+* Beyond Classical Sequence Models for Limited-Data Predictive Maintenance  [link](/SimpleTimeSeries/Limited-Data-Predictive-Maintenance/)
 * Amazon Time Series Stock Price Prediction   [link](/SimpleTimeSeries/LSTM_Amazon_Stock_Forecasting/)
 * Time Series Temperature Forecasting         [link](/SimpleTimeSeries/Time-Series-Temperature-Forecasting/)
 <br> 

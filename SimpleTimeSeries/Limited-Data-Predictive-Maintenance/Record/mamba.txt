@@ -1,0 +1,69 @@
+Model: mamba
+Model configuration: {'class_name': 'MambaLiteClassifier', 'model_kwargs': {'d_model': 96, 'num_layers': 3, 'expand': 2, 'conv_kernel': 5, 'long_dilation': 4, 'dropout': 0.2, 'norm_eps': 1e-06}, 'training_kwargs': {'learning_rate': 0.0005, 'weight_decay': 0.0001}}
+Loss strategy: balanced_focal
+Focal gamma: 1.0
+Class-weight power: 0.0
+Trainable parameters: 196,038
+Best epoch: 3
+Best Macro-Recall: 69.84%
+Final test loss: 0.1930
+Final accuracy: 76.54%
+Final Macro-Recall: 67.83%
+Recall-none: 77.35% | Recall-comp1: 60.26% | Recall-comp2: 59.46% | Recall-comp3: 80.95% | Recall-comp4: 61.11%
+
+Training class distribution and weights
+====================================================================================================
+none: count=7152, weight=0.5405
+comp1: count=756, weight=1.0179
+comp2: count=1004, weight=0.8522
+comp3: count=474, weight=1.4303
+comp4: count=627, weight=1.1591
+
+Epoch history
+====================================================================================================
+Epoch 01/30 | Train Loss: 0.6593 | Train Acc: 64.80% | Validation Loss: 0.2140 | Threshold: 0.400 | Recall-none: 75.80% | Recall-comp1: 34.57% | Recall-comp2: 17.43% | Recall-comp3: 96.30% | Recall-comp4: 49.12% | Macro-Recall: 54.64% | Failure Macro-Recall: 49.35%
+Epoch 02/30 | Train Loss: 0.2977 | Train Acc: 78.27% | Validation Loss: 0.1696 | Threshold: 0.420 | Recall-none: 75.58% | Recall-comp1: 67.90% | Recall-comp2: 47.71% | Recall-comp3: 79.63% | Recall-comp4: 47.37% | Macro-Recall: 63.64% | Failure Macro-Recall: 60.65%
+Epoch 03/30 | Train Loss: 0.2041 | Train Acc: 82.78% | Validation Loss: 0.1990 | Threshold: 0.435 | Recall-none: 75.12% | Recall-comp1: 66.67% | Recall-comp2: 60.55% | Recall-comp3: 90.74% | Recall-comp4: 56.14% | Macro-Recall: 69.84% | Failure Macro-Recall: 68.52%
+Epoch 04/30 | Train Loss: 0.1650 | Train Acc: 85.32% | Validation Loss: 0.1827 | Threshold: 0.440 | Recall-none: 76.50% | Recall-comp1: 67.90% | Recall-comp2: 50.46% | Recall-comp3: 83.33% | Recall-comp4: 68.42% | Macro-Recall: 69.32% | Failure Macro-Recall: 67.53%
+Epoch 05/30 | Train Loss: 0.1408 | Train Acc: 86.63% | Validation Loss: 0.1759 | Threshold: 0.405 | Recall-none: 76.34% | Recall-comp1: 65.43% | Recall-comp2: 52.29% | Recall-comp3: 81.48% | Recall-comp4: 61.40% | Macro-Recall: 67.39% | Failure Macro-Recall: 65.15%
+Epoch 06/30 | Train Loss: 0.1219 | Train Acc: 87.64% | Validation Loss: 0.2006 | Threshold: 0.405 | Recall-none: 75.34% | Recall-comp1: 64.20% | Recall-comp2: 50.46% | Recall-comp3: 75.93% | Recall-comp4: 63.16% | Macro-Recall: 65.82% | Failure Macro-Recall: 63.44%
+Epoch 07/30 | Train Loss: 0.1015 | Train Acc: 89.51% | Validation Loss: 0.1814 | Threshold: 0.365 | Recall-none: 82.10% | Recall-comp1: 46.91% | Recall-comp2: 55.05% | Recall-comp3: 70.37% | Recall-comp4: 59.65% | Macro-Recall: 62.82% | Failure Macro-Recall: 57.99%
+Epoch 08/30 | Train Loss: 0.0835 | Train Acc: 91.08% | Validation Loss: 0.2294 | Threshold: 0.300 | Recall-none: 75.36% | Recall-comp1: 53.09% | Recall-comp2: 51.38% | Recall-comp3: 62.96% | Recall-comp4: 68.42% | Macro-Recall: 62.24% | Failure Macro-Recall: 58.96%
+Epoch 09/30 | Train Loss: 0.0739 | Train Acc: 91.95% | Validation Loss: 0.2237 | Threshold: 0.300 | Recall-none: 80.39% | Recall-comp1: 41.98% | Recall-comp2: 53.21% | Recall-comp3: 74.07% | Recall-comp4: 54.39% | Macro-Recall: 60.81% | Failure Macro-Recall: 55.91%
+Epoch 10/30 | Train Loss: 0.0665 | Train Acc: 93.00% | Validation Loss: 0.2414 | Threshold: 0.255 | Recall-none: 75.68% | Recall-comp1: 50.62% | Recall-comp2: 49.54% | Recall-comp3: 81.48% | Recall-comp4: 45.61% | Macro-Recall: 60.59% | Failure Macro-Recall: 56.81%
+Epoch 11/30 | Train Loss: 0.0573 | Train Acc: 93.99% | Validation Loss: 0.2540 | Threshold: 0.285 | Recall-none: 76.42% | Recall-comp1: 46.91% | Recall-comp2: 56.88% | Recall-comp3: 75.93% | Recall-comp4: 54.39% | Macro-Recall: 62.11% | Failure Macro-Recall: 58.53%
+
+Classification report
+====================================================================================================
+Class            Precision      Recall    F1-score     Support
+--------------------------------------------------------------
+none                98.26%      77.35%      86.56%        4953
+comp1               17.54%      60.26%      27.17%          78
+comp2               17.10%      59.46%      26.56%         111
+comp3               11.04%      80.95%      19.43%          63
+comp4               16.79%      61.11%      26.35%          72
+--------------------------------------------------------------
+accuracy                                    76.54%        5277
+macro avg           32.14%      67.83%      37.21%        5277
+weighted avg        93.20%      76.54%      82.79%        5277
+
+Confusion matrix
+====================================================================================================
+[[3831  210  310  393  209]
+ [  21   47    3    6    1]
+ [  24    7   66    8    6]
+ [   3    3    4   51    2]
+ [  20    1    3    4   44]]
+
+
+ADDITIONAL FAILURE-AWARE EVALUATION
+========================================================================
+Validation-selected threshold: 0.435000
+Raw argmax macro recall: 0.673295
+Final accuracy: 0.765397
+Failure-only macro recall: 0.654448
+Event-level recall: 0.972222
+Event count: 108
+0-24h: component_recall=0.972222, failure_detection_recall=0.972222, n=108
+24-48h: component_recall=0.694444, failure_detection_recall=0.851852, n=108
+48-72h: component_recall=0.259259, failure_detection_recall=0.546296, n=108

@@ -1,0 +1,54 @@
+Model: lstm
+Model configuration: {'class_name': 'LSTMClassifier', 'model_kwargs': {'hidden_size': 128, 'num_layers': 2, 'dropout': 0.2, 'bidirectional': False}, 'training_kwargs': {'learning_rate': 0.001, 'weight_decay': 0.0001}}
+Trainable parameters: 218,117
+Best epoch: 20
+Best Macro-Recall: 39.27%
+Final test loss: 0.1980
+Final accuracy: 94.15%
+Final Macro-Recall: 39.27%
+Recall-none: 98.01% | Recall-comp1: 8.33% | Recall-comp2: 44.44% | Recall-comp3: 11.29% | Recall-comp4: 34.25%
+
+Epoch history
+====================================================================================================
+Epoch 01/20 | Train Loss: 0.2729 | Train Acc: 93.90% | Recall-none: 100.00% | Recall-comp1: 0.00% | Recall-comp2: 0.00% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 20.00%
+Epoch 02/20 | Train Loss: 0.2148 | Train Acc: 93.96% | Recall-none: 99.72% | Recall-comp1: 2.08% | Recall-comp2: 8.89% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 22.14%
+Epoch 03/20 | Train Loss: 0.2092 | Train Acc: 94.07% | Recall-none: 99.87% | Recall-comp1: 0.00% | Recall-comp2: 10.37% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 22.05%
+Epoch 04/20 | Train Loss: 0.2054 | Train Acc: 94.10% | Recall-none: 99.64% | Recall-comp1: 3.12% | Recall-comp2: 13.33% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 23.22%
+Epoch 05/20 | Train Loss: 0.2039 | Train Acc: 94.17% | Recall-none: 99.94% | Recall-comp1: 0.00% | Recall-comp2: 0.74% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 20.14%
+Epoch 06/20 | Train Loss: 0.2030 | Train Acc: 94.10% | Recall-none: 99.91% | Recall-comp1: 4.17% | Recall-comp2: 8.89% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 22.59%
+Epoch 07/20 | Train Loss: 0.2031 | Train Acc: 94.14% | Recall-none: 99.86% | Recall-comp1: 0.00% | Recall-comp2: 7.41% | Recall-comp3: 0.00% | Recall-comp4: 2.74% | Macro-Recall: 22.00%
+Epoch 08/20 | Train Loss: 0.1996 | Train Acc: 94.19% | Recall-none: 97.87% | Recall-comp1: 0.00% | Recall-comp2: 62.96% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 32.17%
+Epoch 09/20 | Train Loss: 0.1987 | Train Acc: 94.21% | Recall-none: 99.15% | Recall-comp1: 1.04% | Recall-comp2: 30.37% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 26.11%
+Epoch 10/20 | Train Loss: 0.1966 | Train Acc: 94.24% | Recall-none: 99.29% | Recall-comp1: 4.17% | Recall-comp2: 31.85% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 27.06%
+Epoch 11/20 | Train Loss: 0.1960 | Train Acc: 94.30% | Recall-none: 99.83% | Recall-comp1: 5.21% | Recall-comp2: 9.63% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 22.93%
+Epoch 12/20 | Train Loss: 0.1947 | Train Acc: 94.31% | Recall-none: 99.31% | Recall-comp1: 0.00% | Recall-comp2: 28.15% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 25.49%
+Epoch 13/20 | Train Loss: 0.1929 | Train Acc: 94.30% | Recall-none: 98.63% | Recall-comp1: 3.12% | Recall-comp2: 59.26% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 32.20%
+Epoch 14/20 | Train Loss: 0.1908 | Train Acc: 94.35% | Recall-none: 99.02% | Recall-comp1: 12.50% | Recall-comp2: 43.70% | Recall-comp3: 0.00% | Recall-comp4: 0.00% | Macro-Recall: 31.04%
+Epoch 15/20 | Train Loss: 0.1895 | Train Acc: 94.53% | Recall-none: 98.64% | Recall-comp1: 7.29% | Recall-comp2: 54.81% | Recall-comp3: 0.00% | Recall-comp4: 6.85% | Macro-Recall: 33.52%
+Epoch 16/20 | Train Loss: 0.1859 | Train Acc: 94.66% | Recall-none: 99.87% | Recall-comp1: 3.12% | Recall-comp2: 8.15% | Recall-comp3: 1.61% | Recall-comp4: 1.37% | Macro-Recall: 22.83%
+Epoch 17/20 | Train Loss: 0.1851 | Train Acc: 94.77% | Recall-none: 98.86% | Recall-comp1: 3.12% | Recall-comp2: 45.19% | Recall-comp3: 3.23% | Recall-comp4: 20.55% | Macro-Recall: 34.19%
+Epoch 18/20 | Train Loss: 0.1803 | Train Acc: 94.83% | Recall-none: 98.63% | Recall-comp1: 7.29% | Recall-comp2: 45.19% | Recall-comp3: 3.23% | Recall-comp4: 17.81% | Macro-Recall: 34.43%
+Epoch 19/20 | Train Loss: 0.1786 | Train Acc: 95.02% | Recall-none: 98.41% | Recall-comp1: 6.25% | Recall-comp2: 40.00% | Recall-comp3: 14.52% | Recall-comp4: 26.03% | Macro-Recall: 37.04%
+Epoch 20/20 | Train Loss: 0.1729 | Train Acc: 95.28% | Recall-none: 98.01% | Recall-comp1: 8.33% | Recall-comp2: 44.44% | Recall-comp3: 11.29% | Recall-comp4: 34.25% | Macro-Recall: 39.27%
+
+Classification report
+====================================================================================================
+Class            Precision      Recall    F1-score     Support
+--------------------------------------------------------------
+none                96.00%      98.01%      96.99%        6334
+comp1               80.00%       8.33%      15.09%          96
+comp2               46.15%      44.44%      45.28%         135
+comp3               36.84%      11.29%      17.28%          62
+comp4               33.78%      34.25%      34.01%          73
+--------------------------------------------------------------
+accuracy                                    94.15%        6700
+macro avg           58.55%      39.27%      41.73%        6700
+weighted avg        93.54%      94.15%      93.35%        6700
+
+Confusion matrix
+====================================================================================================
+[[6208    1   65   12   48]
+ [  88    8    0    0    0]
+ [  73    1   60    0    1]
+ [  54    0    1    7    0]
+ [  44    0    4    0   25]]
